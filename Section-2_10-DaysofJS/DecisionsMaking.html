@@ -1,0 +1,19 @@
+<html>
+  <form id="form">
+  <h3>Check you are Eligiable for Vote or not ... </h3>
+  <input type="text" id="age" autocomplete="off" placeholder ="  Enter Your Age ">
+  <button type="button" onclick="CheckForVote()">Check</button>
+  <p id="para1"> </p>
+</form>
+</html>
+<script>
+  function CheckForVote(){
+    var checkage = document.getElementById("age").value;
+    if(checkage >= 18){
+      document.getElementById("para1").innerHTML=" You are eligiable for Vote "
+    }else{
+      document.getElementById("para1").innerHTML="You are below 18"
+    }
+  }
+   
+</script>

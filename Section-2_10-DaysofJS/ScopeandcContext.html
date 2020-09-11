@@ -1,0 +1,22 @@
+<html>
+ <p id="para1"> </p>
+ <p id="para2"> </p>
+ <p id="para3"> </p>
+
+</html>
+
+<script>
+  var newvar = 1000;
+   function myfunction1(){
+       var newvar = 1000;
+       document.getElementById("para1").innerHTML="In function" +newvar;    
+         function innerfunction(){
+             var newvar=1000;
+             document.getElementById("para3").innerHTML="IN Inner Function" + newvar;
+         }
+       
+   }
+   document.getElementById("para2").innerHTML="Outside the function " +newvar;
+    myfunction1()
+
+</script>
