@@ -1,0 +1,39 @@
+<html>
+    <h1>To-Do App</h1>
+<body>  
+  <form id="form1">
+  <input id = "field" type="text"  >
+    <button> Add to List </button>
+     </form>
+    <br>
+     
+  <h4>List of Items</h4>
+   <ul id = "ourlist">
+  
+  </ul>
+  </body>
+  </html>
+  <script>
+let form1 = document.getElementById("form1")
+let field = document.getElementById("field")
+let ourlist = document.getElementById("ourlist")
+form1.addEventListener("submit", (e)=> {
+  e.preventDefault()
+  AddItem(field.value)
+ 
+})
+
+function AddItem(item){
+  
+   let addtablecontents = `<li> ${item} <button onClick="Deleteitem(this)"> Delete </button></li>`
+  ourlist.insertAdjacentHTML("beforeEnd", addtablecontents)
+  field.value=""
+  field.focus()
+}
+
+function Deleteitem(removeitem){
+  removeitem.parentElement.remove()
+}
+
+
+  </script>
