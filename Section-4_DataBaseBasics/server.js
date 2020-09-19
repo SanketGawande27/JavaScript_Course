@@ -11,7 +11,7 @@ app.use(exprees.static('public'))
 
 // declare a var db 
 //connection to db(mongoDB) with username,password and the table name
-let connectionsString = 'mongodb+srv://todoAppUser:todoAppUser@cluster0.3dbfe.mongodb.net/ToDoApp?retryWrites=true&w=majority'
+let connectionsString = 'mongodb+srv://USERNAME:PASSWORD@cluster0.3dbfe.mongodb.net/DBNAME?retryWrites=true&w=majority'
 
 mongodb.connect(connectionsString, {useNewUrlParser: true}, function(err,clinet){
   db = clinet.db()
