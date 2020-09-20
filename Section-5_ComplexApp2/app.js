@@ -1,17 +1,33 @@
-const express = require('express')                
+const express = require('express')
+const session = require('express-session')
+const { response } = require('express')
+const MongoStore = require('connect-mongo')(session)
+const flash = require('connect-flash')
 const app = express()
 
-const router = require('./router')  //connect to the router folder for the operations and store data within router var
+let sessionOptions = session({
+    secret: "JavaScript is so cool",
+    store: new MongoStore({client: require('./db')}),
+    resave:false,
+    saveUninitialized: false,
+    cookie:{maxAge: 1000 * 60 * 60 * 24, httpOnly: true}
+})
 
-app.use(express.urlencoded({extended:false}))    //it tells express to add usersubmited data on to ur request object
+app.use(sessionOptions)
+app.use(flash())
+
+
+const router = require('./router')
+
+app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
 
+app.use(express.static('public'))
+app.set('views','views')      //look views folder
+app.set('view engine', 'ejs')
 
-app.use(express.static('public'))   // is use for to inculude css 
-app.set('views','views')   //tells which will be open
-app.set('view engine','ejs')   //telss use ejs engine
+app.use('/', router)
 
 
-app.use('/',router)
-app.listen(3000)
+module.exports = app
