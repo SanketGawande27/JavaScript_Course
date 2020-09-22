@@ -20,3 +20,12 @@
      4. I learned hashing using passwords and how can we 'identify' or 'trust' a user request.
      5. I've learned session.
      6. Also, I learned how we add users profile image on profile.
+  6. Section-6 (User Created Posts): In which I learned the following tasks,
+     1. I've created a user post and added it to the database.
+     2. identify which requests are valid or invalid. if the request is invalid then it shows an error 404 page, not fount.
+     3. I've retrieved the username and profile picture to shown with the user's created post.
+     4. Viewing the posts.
+     5. I worked on update the module on the complex App. I've updated user posts and added them into the DB. (if the edit request is from a valid user then it  will be edited and after that, it updated and insert into the database. Otherwise, it shows a flash error "Unauthorized User")
+     6. I worked on deleting posts. I've deleted the user-created posts from its account. (if the delete request is from a valid user then it will be deleted from the database. Otherwise, it shows a flash error "Unauthorized User" )
+
+
