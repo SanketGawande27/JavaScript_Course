@@ -27,5 +27,9 @@
      4. Viewing the posts.
      5. I worked on update the module on the complex App. I've updated user posts and added them into the DB. (if the edit request is from a valid user then it  will be edited and after that, it updated and insert into the database. Otherwise, it shows a flash error "Unauthorized User")
      6. I worked on deleting posts. I've deleted the user-created posts from its account. (if the delete request is from a valid user then it will be deleted from the database. Otherwise, it shows a flash error "Unauthorized User" )
+  7. Section-7 (Live Search Feature): In which I learned
+     1. Showing and hiding search overlay: In which I've added an event listener if a user click on Search Icon then it will show the search bar. otherwise, it will hide.
+     2. Responding to keypress events: In which I've added some event listeners such as mouseclick events and keyup events.
+     3. Generating HTML for search results: In which I've generated an HTML to show the search items that are stored. if the searched item is not present then it shows the Flash message.     
 
 
