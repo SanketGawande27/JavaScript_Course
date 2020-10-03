@@ -30,6 +30,13 @@
   7. Section-7 (Live Search Feature): In which I learned
      1. Showing and hiding search overlay: In which I've added an event listener if a user click on Search Icon then it will show the search bar. otherwise, it will hide.
      2. Responding to keypress events: In which I've added some event listeners such as mouseclick events and keyup events.
-     3. Generating HTML for search results: In which I've generated an HTML to show the search items that are stored. if the searched item is not present then it shows the Flash message.     
-
+     3. Generating HTML for search results: In which I've generated an HTML to show the search items that are stored. if the searched item is not present then it shows the Flash message.
+  8. Section-8 (Letting Users Follow Each Other): In which I learned
+     1. Showing and hiding search overlay: In which I've added an event listener if a user click on Search Icon then it will show the search bar. otherwise, it will hide.
+     2. Responding to keypress events: In which I've added some event listeners such as mouseclick events and keyup events.
+     3. Generating HTML for search results: In which I've generated an HTML to show the search items that are stored. if the searched item is not present then it shows the Flash message.
+  9. Section-9 (Live Chat (Socket.IO)):  In which I've performed the following tasks.
+     1. I've generated HTML for the chatbox. If user wants to do a chat then it will click on chat Icon.
+     2. And, also hide a chatbox, if the chat is finished.
+     3. connects the Server and Browser for chat (Socket Connection Server to Browser and Browser to Server)
 
