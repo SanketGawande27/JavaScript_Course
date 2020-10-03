@@ -39,4 +39,8 @@
      1. I've generated HTML for the chatbox. If user wants to do a chat then it will click on chat Icon.
      2. And, also hide a chatbox, if the chat is finished.
      3. connects the Server and Browser for chat (Socket Connection Server to Browser and Browser to Server)
+  10. Section-10 (Live Validation for Registration form): In which I learned
+     1. I learned how to validate a form in real time.
+     2. If the user Inters the username that are already taken then it shows an flash eror that username is already taken. Same as for email, and for the password field it shows on flash error if the password is to short and if the password is to long. 
+
 
